@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 2px;          
+  }
+  
+  body::-webkit-scrollbar-track {
+    background:  rgb(36, 36, 36);       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);         
+    border: none;
+  }
+
+body {
+    overflow-x: hidden; 
+  }
+
+header{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+header h1{
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(36, 36, 36);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    border: solid white 1px;
+    max-width: 400px;
+    max-height: 400px;
+    padding: 10px;
+    background-color: #ffffff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.box img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.heart{
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart img{
+    max-width: 25px;
+    max-height: 25px;
+    filter: grayscale(100%);
+    transition: all 0.2s;
+}
+
+.heart img:hover{
+    filter: saturate(50%);
+    filter: grayscale(0%);
+    max-width: 40px;
+    max-height: 40px;
+
+}
+
+.heart img:hover{
+    cursor: pointer;
+}
+
+.element{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.part img{
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.part{
+    min-width: 30px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    margin: 4px;
+}
+
+.part:hover{
+    cursor: pointer;
+}
+
+.caixa{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    margin: 10px;
+}
+
+.caixa:hover{
+    box-shadow: 3px 15px 15px #353333;
+}
+
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userbox img{
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+}
+
+.userbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.userbox p{
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.circle{
+    margin: 5px;
+    background: black;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+
+.d{
+    display: flex;
+    flex-direction: row;
+}
+
+.userbox:hover{
+    cursor: pointer;
+}
+
+.ver img{
+    margin: 5px;
+    max-width: 10px;
+    max-height: 10px;
+    align-items: center;
+    display: flex;
+}
